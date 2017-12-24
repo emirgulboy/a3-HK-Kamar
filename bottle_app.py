@@ -173,41 +173,41 @@ The ratio of manufacturing industries’ products in total imports was 82.3%. Th
 		</h2>
 
 		<form action="/checklist" method="POST">
-		<input type="checkbox" name="checklist" value="1">1985</input>
-		<input type="checkbox" name="checklist" value="2">1986</input>
-		<input type="checkbox" name="checklist" value="3">1987</input>
-		<input type="checkbox" name="checklist" value="4">1988</input>
-		<input type="checkbox" name="checklist" value="5">1989</input>
+		<input type="checkbox" name="checklist" value="1">1985 
+		<input type="checkbox" name="checklist" value="2">1986 
+		<input type="checkbox" name="checklist" value="3">1987 
+		<input type="checkbox" name="checklist" value="4">1988 
+		<input type="checkbox" name="checklist" value="5">1989 
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="6">1990</input>
-		<input type="checkbox" name="checklist" value="7">1991</input>
-		<input type="checkbox" name="checklist" value="8">1992</input>
-		<input type="checkbox" name="checklist" value="9">1993</input>
-		<input type="checkbox" name="checklist" value="10">1994</input>
+		<input type="checkbox" name="checklist" value="6">1990 
+		<input type="checkbox" name="checklist" value="7">1991 
+		<input type="checkbox" name="checklist" value="8">1992 
+		<input type="checkbox" name="checklist" value="9">1993 
+		<input type="checkbox" name="checklist" value="10">1994 
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="11">1995</input>
-		<input type="checkbox" name="checklist" value="12">1996</input>
-		<input type="checkbox" name="checklist" value="13">1997</input>
-		<input type="checkbox" name="checklist" value="14">1998</input>
-		<input type="checkbox" name="checklist" value="15">1999</input>
+		<input type="checkbox" name="checklist" value="11">1995 
+		<input type="checkbox" name="checklist" value="12">1996 
+		<input type="checkbox" name="checklist" value="13">1997 
+		<input type="checkbox" name="checklist" value="14">1998 
+		<input type="checkbox" name="checklist" value="15">1999 
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="16">2000</input>
-		<input type="checkbox" name="checklist" value="17">2001</input>
-		<input type="checkbox" name="checklist" value="18">2002</input>
-		<input type="checkbox" name="checklist" value="19">2003</input>
-		<input type="checkbox" name="checklist" value="20">2004</input>
+		<input type="checkbox" name="checklist" value="16">2000 
+		<input type="checkbox" name="checklist" value="17">2001 
+		<input type="checkbox" name="checklist" value="18">2002 
+		<input type="checkbox" name="checklist" value="19">2003 
+		<input type="checkbox" name="checklist" value="20">2004 
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="21">2005</input>
-		<input type="checkbox" name="checklist" value="22">2006</input>
-		<input type="checkbox" name="checklist" value="23">2007</input>
-		<input type="checkbox" name="checklist" value="24">2008</input>
-		<input type="checkbox" name="checklist" value="25">2009</input>
+		<input type="checkbox" name="checklist" value="21">2005
+		<input type="checkbox" name="checklist" value="22">2006 
+		<input type="checkbox" name="checklist" value="23">2007 
+		<input type="checkbox" name="checklist" value="24">2008 
+		<input type="checkbox" name="checklist" value="25">2009 
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="26">2010</input>
-		<input type="checkbox" name="checklist" value="27">2011</input>
-		<input type="checkbox" name="checklist" value="28">2012</input>
-		<input type="checkbox" name="checklist" value="29">2013</input>
-		<input type="checkbox" name="checklist" value="30">2014</input>
+		<input type="checkbox" name="checklist" value="26">2010 
+		<input type="checkbox" name="checklist" value="27">2011 
+		<input type="checkbox" name="checklist" value="28">2012 
+		<input type="checkbox" name="checklist" value="29">2013 
+		<input type="checkbox" name="checklist" value="30">2014 
 		<p>\t</p>
 		<input type="submit" value="Lets Search!">
 	</form><br/>
@@ -223,7 +223,7 @@ The ratio of manufacturing industries’ products in total imports was 82.3%. Th
 		<input type="submit" value="Lets Search!">
 	</form><br/>
 	<form action="/trades" method="POST">
-		<input type="textbox" name="trade" placeholder="Capital letters matters"/>
+		<input type="text" name="trade" placeholder="Capital letters matters"/>
 		<input type="submit" value="Lets Search!">
 	</form><br/>
 	<h1>Made by HK</h1>
@@ -341,7 +341,7 @@ def year():
 				<td>%(8)s</td>
 				<td>%(9)s</td>
 							</tr>
-			""" % { "0":x[0], "5":x[5], "6":x[6], "7":x[7], "8":x[8], "9":x[9]}
+			""" % {"0":x[0],"5":x[5], "6":x[6], "7":x[7], "8":x[8], "9":x[9]}
 	if userinput == "c":
 		text ="""<table>
 			
@@ -358,7 +358,7 @@ def year():
 				<td>%(14)s</td>
 				
 							</tr>
-			""" % { "0":x[0], "10":x[10], "11":x[11], "12":x[12], "13":x[13], "14":x[14]}		
+			""" % {"0":x[0],"10":x[10], "11":x[11], "12":x[12], "13":x[13], "14":x[14]}		
 	if userinput == "e":
 		text ="""<table>
 		
@@ -669,3 +669,4 @@ app = default_app()
 # The below code is necessary for running this bottle app standalone on your computer.
 if __name__ == "__main__":
   run()
+
