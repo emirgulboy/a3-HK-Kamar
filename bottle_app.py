@@ -24,7 +24,25 @@ def htmlify(title,text):
                 <meta charset="utf-8" />
                 <title>%s</title>
                 <style>
-			body{
+			h1  {
+				font-size:5em;
+				text-align:center;
+				color:#FFD700;
+				background-color:#800000;
+				}
+
+			p{
+				background-color:#800000;
+				font-size:1.25em;
+				text-align:center;
+			}
+			h2{
+				text-align:center;
+				color: #FFD700;
+				background-color:#800000;
+					
+			}
+								body{
 				background-color : #800000;
 				text-align : center;
 			}
@@ -66,7 +84,95 @@ def htmlify(title,text):
 def index():
 	text = """
 	
-	<form action="/checklist" method="POST">
+	<h1>Foreign Trade Statistics</h1>
+		<h2>
+		Exports and imports increased by 9% and 25%, respectively
+		</h2>
+
+		<p>
+According to the provisional data, produced with the cooperation of the Turkish Statistical Institute and the Ministry of Customs and Trade, in October 2017; exports were 13 billion 942 million dollars with a 9%  increase and imports were 21 billion 267 million dollars  with a 25%  increase  compared with October 2016.
+
+		</p>
+
+		
+		<h2>
+		Foreign trade deficit increased by 73.9%  
+		</h2>
+		
+
+		<p>
+In October 2017 foreign trade deficit was 7 billion 324 million dollars with a 73.9% increase compared with October 2016.
+
+In October 2017, exports coverage imports was 65.6% while it was 75.2% in October 2016.
+		</p>
+		
+		
+		<h2>
+		Seasonally and calendar adjusted exports  increased by 1.7%
+		</h2>
+		
+
+		<p>
+Seasonally and calendar adjusted exports  increased by 1.7% while imports decreased by 6.1%  compared with previous month. Calendar adjusted exports and imports increased by 7.9% and 19.2%, respectively compared with October 2016.
+		</p>
+		
+	<img id="1" src="http://www.tuik.gov.tr//hb_en/9/kapak/24831_img_1_9_30.11.20171799568876.jpg" alt="1">	
+		<h2>
+		Exports to the European Union  increased by 11.4%
+		</h2>
+
+
+		<p>
+As compared with the same month of the previous year, exports to the EU-28  increased by 11.4% from 6 billion 193 million dollars to 6 billion 900 million dollars. The proportion of the EU countries was 49.5% in October 2017 while it was 48.4% in October 2016.
+		</p>
+		
+		
+		<h2>
+		The main partner for exports was Germany
+		</h2>
+
+
+		<p>
+In October 2017, the main partner country for exports was Germany with 1 billion 455 million dollars. The country was followed by the United Kingdom with 890 million dollars, USA with 771 million dollars and Italy with 746 million dollars.
+		</p>
+		
+		
+		<h2>
+		The top country for imports was China
+		</h2>
+
+
+		<p>
+In October 2017, the top country for Turkey’s imports was China with 2 billion 113 million dollars. The country was followed by Germany with 2 billion 33 million dollars, Russia with 1 billion 793 million dollars and Italy with 1 billion 79 million dollars.
+		</p>
+		<img id="2" src="http://www.tuik.gov.tr//hb_en/9/kapak/24831_img_3_9_30.11.2017-1870726836.jpg" alt="2">
+		
+		<h2>
+		Ratio of exports of high-tech products in manufacturing industries was 3.9%
+		</h2>
+		
+
+		<p>
+
+Foreign trade by technology intensity covers the manufacturing industries’ products in classification of  ISIC Rev.3. According to the ISIC Rev.3, the ratio of manufacturing industries products in total exports was 93.1% in October. The ratio of high-technology products in manufacturing industries was 3.9%. The ratio of medium-high-technology products in manufacturing industries’ products was 36%.
+		</p>
+		
+		
+		<h2>
+		Ratio of imports of high-tech products in manufacturing industries was 16.6% 
+		</h2>
+
+
+		<p>
+The ratio of manufacturing industries’ products in total imports was 82.3%. The ratio of high-technology products in  manufacturing industries’ products was 16.6% in October 2017. The ratio of medium-high-technology products in manufacturing industries’ products was 42.3%.
+		</p>
+		<img id="3" src="http://www.tuik.gov.tr//hb_en/9/kapak/24831_img_4_9_30.11.2017-350008289.jpg" alt="3">
+		
+		<h2>
+		The next release on this subject will be on December 29, 2017.
+		</h2>
+
+		<form action="/checklist" method="POST">
 		<input type="checkbox" name="checklist" value="1">1985</input>
 		<input type="checkbox" name="checklist" value="2">1986</input>
 		<input type="checkbox" name="checklist" value="3">1987</input>
@@ -85,27 +191,42 @@ def index():
 		<input type="checkbox" name="checklist" value="14">1998</input>
 		<input type="checkbox" name="checklist" value="15">1999</input>
 		<p>\t</p>
-		<input type="checkbox" name="checklist" value="15">2000</input>
-		<input type="checkbox" name="checklist" value="15">2001</input>
-		<input type="checkbox" name="checklist" value="15">2002</input>
-		<input type="checkbox" name="checklist" value="15">2003</input>
-		<input type="checkbox" name="checklist" value="15">2004</input>
-		
+		<input type="checkbox" name="checklist" value="16">2000</input>
+		<input type="checkbox" name="checklist" value="17">2001</input>
+		<input type="checkbox" name="checklist" value="18">2002</input>
+		<input type="checkbox" name="checklist" value="19">2003</input>
+		<input type="checkbox" name="checklist" value="20">2004</input>
+		<p>\t</p>
+		<input type="checkbox" name="checklist" value="21">2005</input>
+		<input type="checkbox" name="checklist" value="22">2006</input>
+		<input type="checkbox" name="checklist" value="23">2007</input>
+		<input type="checkbox" name="checklist" value="24">2008</input>
+		<input type="checkbox" name="checklist" value="25">2009</input>
+		<p>\t</p>
+		<input type="checkbox" name="checklist" value="26">2010</input>
+		<input type="checkbox" name="checklist" value="27">2011</input>
+		<input type="checkbox" name="checklist" value="28">2012</input>
+		<input type="checkbox" name="checklist" value="29">2013</input>
+		<input type="checkbox" name="checklist" value="30">2014</input>
 		<p>\t</p>
 		<input type="submit" value="Lets Search!">
 	</form><br/>
 	<form action="/year" method="POST">
 		<select name="year">
-			<option value="1">1985-1999</option>
-			<option value="2">2000-2014</option>
+			<option value="a">1985-1989</option>
+			<option value="b">1990-1994</option>
+			<option value="c">1995-1999</option>
+			<option value="d">2000-2004</option>
+			<option value="e">2005-2009</option>
+			<option value="f">2010-2014</option>
 		</select>
 		<input type="submit" value="Lets Search!">
 	</form><br/>
 	<form action="/trades" method="POST">
-		<input type="textbox" name="trade" placeholder="Capitol letters matters"/>
+		<input type="textbox" name="trade" placeholder="Capital letters matters"/>
 		<input type="submit" value="Lets Search!">
 	</form><br/>
-	<p>Made by HK</p>
+	<h1>Made by HK</h1>
 	
 	"""
 	return htmlify("Foreign Trades by Years",text)
@@ -184,12 +305,12 @@ def trades():
 				</tr>
 			""" % { "0":x[0], "1" : x[1],  "2":x[2], "3":x[3], "4":x[4], "5":x[5], "6":x[6] ,"7":x[7] ,"8":x[8] ,"9":x[9] ,"10":x[10] ,"11":x[11] ,"12":x[12] ,"13":x[13] ,"14":x[14] ,"15":x[15] ,"16":x[16] ,"17":x[17] ,"18":x[18] ,"19":x[19] ,"20":x[20] ,"21":x[21] ,"22":x[22] ,"23":x[23] ,"24":x[24] ,"25":x[25] ,"26":x[26] ,"27":x[27] ,"28":x[28] ,"29":x[29] ,"30":x[30] }
 	text += "</table>"
-	return htmlify("Title", text)
+	return htmlify("Findings", text)
 
 def year():
 	userinput = request.POST["year"]
 	text = ""
-	if userinput == "1":
+	if userinput == "a":
 		text ="""<table>
 			
 				"""
@@ -202,20 +323,43 @@ def year():
 				<td>%(2)s</td>
 				<td>%(3)s</td>
 				<td>%(4)s</td>
+				
+							</tr>
+			""" % {"0":x[0], "1":x[1], "2":x[2], "3":x[3], "4":x[4]}
+	if userinput == "b":
+		text ="""<table>
+			
+				"""
+		for x in contents :
+			if x[0] == "TRADE":
+				continue
+			text += """<tr>
+				<td>%(0)s</td>
 				<td>%(5)s</td>
 				<td>%(6)s</td>
 				<td>%(7)s</td>
 				<td>%(8)s</td>
 				<td>%(9)s</td>
+							</tr>
+			""" % {"5":x[5], "6":x[6], "7":x[7], "8":x[8], "9":x[9]}
+	if userinput == "c":
+		text ="""<table>
+			
+				"""
+		for x in contents :
+			if x[0] == "TRADE":
+				continue
+			text += """<tr>
+				<td>%(0)s</td>
 				<td>%(10)s</td>
 				<td>%(11)s</td>
 				<td>%(12)s</td>
 				<td>%(13)s</td>
 				<td>%(14)s</td>
-				<td>%(15)s</td>
+				
 							</tr>
-			""" % {"0":x[0], "1":x[1], "2":x[2], "3":x[3], "4":x[4], "5":x[5], "6":x[6], "7":x[7], "8":x[8], "9":x[9], "10":x[10], "11":x[11], "12":x[12], "13":x[13], "14":x[14], "15":x[15]}		
-	else :
+			""" % {"10":x[10], "11":x[11], "12":x[12], "13":x[13], "14":x[14]}		
+	if userinput == "e":
 		text ="""<table>
 		
 				"""
@@ -229,20 +373,51 @@ def year():
 				<td>%(18)s</td>
 				<td>%(19)s</td>
 				<td>%(20)s</td>
+				
+							</tr>
+			""" % {"0":x[0], "16":x[16],"17":x[17], "18":x[18] ,"19":x[19] ,"20":x[20]}					
+	text += "</table>"
+
+			
+	if userinput == "e":
+		text ="""<table>
+		
+				"""
+		for x in contents :
+			if x[0] == "TRADE":
+				continue
+			text += """<tr>
+				<td>%(0)s</td>
 				<td>%(21)s</td>
 				<td>%(22)s</td>
 				<td>%(23)s</td>
 				<td>%(24)s</td>
 				<td>%(25)s</td>
+				
+							</tr>
+			""" % {"0":x[0],"21":x[21] ,"22":x[22] ,"23":x[23] ,"24":x[24] ,"25":x[25]}					
+	text += "</table>"
+
+			
+	if userinput == "f":
+		text ="""<table>
+		
+				"""
+		for x in contents :
+			if x[0] == "TRADE":
+				continue
+			text += """<tr>
+				<td>%(0)s</td>
 				<td>%(26)s</td>
 				<td>%(27)s</td>
 				<td>%(28)s</td>
 				<td>%(29)s</td>
 				<td>%(30)s</td>
 							</tr>
-			""" % {"0":x[0], "16":x[16],"17":x[17], "18":x[18] ,"19":x[19] ,"20":x[20] ,"21":x[21] ,"22":x[22] ,"23":x[23] ,"24":x[24] ,"25":x[25] ,"26":x[26] ,"27":x[27] ,"28":x[28] ,"29":x[29] ,"30":x[30]}					
+			""" % {"0":x[0],"26":x[26] ,"27":x[27] ,"28":x[28] ,"29":x[29] ,"30":x[30]}					
 	text += "</table>"
-	return htmlify("Title", text)
+
+	return htmlify("The Years Which You Are Looking For", text)
 
 def checklist():
 	userinput = request.POST.getall("checklist")
@@ -311,7 +486,38 @@ def checklist():
 			
 		if hk == "20":
 			print("20th header added")
+
+		if hk == "21":
+			print("21st header added")
+
+		if hk == "22":
+			print("22nd header added")
+
+		if hk == "23":
+			print("23rd header added")
+
+		if hk == "24":
+			print("24th header added")
+
+		if hk == "25":
+			print("25th header added")
+
+		if hk == "26":
+			print("26th header added")
+
+		if hk == "27":
+			print("27th header added")
+
+		if hk == "28":
+			print("28th header added")
+
+		if hk == "29":
+			print("29th header added")
+
+		if hk == "30":
+			print("30th header added")
 			
+		
 			print (text)		
 	text += """		</tr>\n"""
 	for x in contents:
@@ -400,9 +606,50 @@ def checklist():
 				text += """
 					<td>%(20)s</td>
 				""" % {"20":x[20]}
+			elif hk =="21":
+				text += """
+					<td>%(20)s</td>
+				""" % {"21":x[21]}
+			elif hk =="22":
+				text += """
+					<td>%(22)s</td>
+				""" % {"22":x[22]}
+			elif hk =="23":
+				text += """
+					<td>%(23)s</td>
+				""" % {"23":x[23]}
+			elif hk =="24":
+				text += """
+					<td>%(24)s</td>
+				""" % {"24":x[24]}
+			elif hk =="25":
+				text += """
+					<td>%(25)s</td>
+				""" % {"25":x[25]}
+			elif hk =="26":
+				text += """
+					<td>%(26)s</td>
+				""" % {"26":x[26]}
+			elif hk =="27":
+				text += """
+					<td>%(27)s</td>
+				""" % {"27":x[27]}
+			elif hk =="28":
+				text += """
+					<td>%(28)s</td>
+				""" % {"28":x[28]}
+			elif hk =="29":
+				text += """
+					<td>%(29)s</td>
+				""" % {"29":x[29]}
+			elif hk =="30":
+				text += """
+					<td>%(30)s</td>
+				""" % {"30":x[30]}
+
 		text += """		</tr>\n"""
 	text += """	</table>\n"""						
-	return htmlify("Title", text)
+	return htmlify("The Years Which You Are Looking For", text)
 
 route('/', 'GET', index)
 route('/trades', 'POST', trades)
@@ -422,4 +669,3 @@ app = default_app()
 # The below code is necessary for running this bottle app standalone on your computer.
 if __name__ == "__main__":
   run()
-
